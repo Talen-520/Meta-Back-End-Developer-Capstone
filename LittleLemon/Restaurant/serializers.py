@@ -11,11 +11,12 @@ class MenuSerializer(serializers.ModelSerializer):
     class Meta:
         model = Menu
         fields = '__all__'  # You can also specify the fields as a list of field names
+        # fields = ['id','title','price','inventory'] 
 
 
 
 class BookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Booking
-        fields = '__all__'  # Or list specific fields if you prefer
+        fields = '__all__'  
 
